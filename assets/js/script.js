@@ -21,7 +21,6 @@ class Veterinario {
         console.log(`✅ Mascota "${nuevaMascota.nombre}" registrada con éxito.`);
     };
 
-    // Método para consultar registros usando Template Literals
     consultarRegistros = () => {
         if (this.pacientes.length === 0) {
             return console.log("⚠️ No hay pacientes registrados.");

@@ -10,7 +10,7 @@ export class AppManager {
         const inputNacimientoMascota = document.querySelector('#mascotaFechaNacimiento')
         const inputNombreDueno = document.querySelector('#mascotaDueno')
         const inputApellidoDueno = document.querySelector('#mascotaApellidoDueno')        
-        const inputDiagnostico = document.querySelector('#mascotaDiagnostico')
+        const inputevolucionmedica = document.querySelector('#mascotaevolucionmedica')
         
 
         const mascota = new Mascota(
@@ -18,7 +18,7 @@ export class AppManager {
             inputNombreDueno.value,
             inputApellidoDueno.value,
             inputNacimientoMascota.value,
-            inputDiagnostico.value,
+            inputevolucionmedica.value,
             veterinarioActual.nombreCompleto
         )
 

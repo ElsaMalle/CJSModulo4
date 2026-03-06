@@ -17,7 +17,7 @@ export class Componentes {
                                     </p>
                                     <p class="text-muted small mb-1">
                                         <i class="bi bi-clipboard-pulse"></i>
-                                        ${mascota.diagnostico}
+                                        ${mascota.evolucionmedica}
                                     </p>
                                     <p class="text-muted small mb-1">
                                         <i class="bi bi-person-badge"></i>
