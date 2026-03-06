@@ -20,6 +20,6 @@ export class Render {
         const cantidadMascotas = document.querySelector('#mascotaCount')
         cantidadMascotas.innerHTML = mascotas.length
         const htmlCard = mascotas.map(mascota => Componentes.crearTarjetaMascota(mascota)).join('')
-        listaMascotas.innerHTML= htmlCard
+        listaMascotas.innerHTML = htmlCard
     }
 }

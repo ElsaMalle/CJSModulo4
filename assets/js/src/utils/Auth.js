@@ -53,7 +53,7 @@ export class Auth { // ESTA CLASE NO CREA OBJETOS! -> Sirve para darle identidad
     static mostrarVeterinarios() {
         return Auth.Veterinarios
     }
-    
+
     static logout() {
         Auth.VeterinarioActual = null;
         alert('Sesión cerrada. Hasta luego!');

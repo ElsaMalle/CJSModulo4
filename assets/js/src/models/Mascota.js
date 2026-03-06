@@ -13,8 +13,8 @@ export class Mascota {
     #nombreVeterinario
     #isAlta = false
 
-    constructor(nombre, nombredueno, apellidodueno, fechaNacimiento, evolucionmedica,nombreVeterinario) {
-        
+    constructor(nombre, nombredueno, apellidodueno, fechaNacimiento, evolucionmedica, nombreVeterinario) {
+
         this.#id = crypto.randomUUID();
         this.#nombre = Validator.valor(nombre, REGEX_NAME, 'Nombre mascota no valido');
         this.#nombredueno = Validator.valor(nombredueno, REGEX_NAME, 'Nombre dueño no valido');

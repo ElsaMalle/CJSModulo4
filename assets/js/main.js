@@ -16,7 +16,7 @@ const formularioMascota = document.querySelector("#addMascotaForm");
 const buscadorMascota = document.querySelector("#searchMascota");
 
 const veterinario = new Veterinario('clarrain', '123456789', 'Carolina', 'Larrain')
-const veterinario2 = new Veterinario('agarcia', '123456789','Alan', 'Garcia')
+const veterinario2 = new Veterinario('agarcia', '123456789', 'Alan', 'Garcia')
 
 const mascota1 = new Mascota('Newton', 'Elsa', 'Malle', '2009-09-18', 'gatito bello', veterinario.nombreCompleto)
 const mascota2 = new Mascota('Carlota', 'Eduardo', 'Malle', '2015-02-02', 'Problemas de equilibrio', veterinario.nombreCompleto)
@@ -50,7 +50,7 @@ logoutBtn.addEventListener('click', () => {
 //esto se lo pedi a la IA, para hacer mas facil la revision
 const cargarCuentasPrueba = () => {
     const contenedor = document.querySelector("#cuentasPrueba");
-    if (!contenedor) return; 
+    if (!contenedor) return;
     const listaVetes = Auth.mostrarVeterinarios();
     const htmlVetes = listaVetes.map(v => `
         <div class="mb-2 p-2 border-bottom">

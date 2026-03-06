@@ -9,9 +9,9 @@ export class AppManager {
         const inputNombreMascota = document.querySelector('#mascotaNombre')
         const inputNacimientoMascota = document.querySelector('#mascotaFechaNacimiento')
         const inputNombreDueno = document.querySelector('#mascotaDueno')
-        const inputApellidoDueno = document.querySelector('#mascotaApellidoDueno')        
+        const inputApellidoDueno = document.querySelector('#mascotaApellidoDueno')
         const inputevolucionmedica = document.querySelector('#mascotaevolucionmedica')
-        
+
 
         const mascota = new Mascota(
             inputNombreMascota.value,
@@ -34,7 +34,7 @@ export class AppManager {
     }
 
     static buscarMascota(veterinarioActual, criterio) {
-        if(!veterinarioActual) return
+        if (!veterinarioActual) return
 
         const mascotas = veterinarioActual.buscarMascota(criterio)
         Render.mostrarMascotas(mascotas)
